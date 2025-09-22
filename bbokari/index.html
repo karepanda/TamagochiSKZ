@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>bbokari Tamagochi</h1>
+
+    <div id="pet">
+        <img id="petImage" src="assets/bbokari in love.png" alt="Bbokari">
+    </div>
+
+    <div class="stats">
+        <p>Hunger: <progress id="hunger" value="100" max="100"></progress></p>
+        <p>Happiness: <progress id="happiness" value="100" max="100"></progress></p>
+        <p>Energy: <progress id="energy" value="100" max="100"></progress></p>
+    </div>
+
+    <div class="actions">
+        <button onclick="feed()">Feed</button>
+        <button onclick="play()">Play</button>
+        <button onclick="sleep()">Sleep</button>
+    </div>
+
+    <audio id="music" src="assets\lofi-girl-lofi-ambient-music-365952.mp3"></audio>
+
+    <button id="muteBtn"></button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
